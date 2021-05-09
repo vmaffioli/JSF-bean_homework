@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://xmlns.jcp.org/jsf/html"
+	xmlns:f="http://xmlns.jcp.org/jsf/core">
+
+
+<h:head>
+	<title>Counter one - Application Scoped Test</title>
+
+	<style>
+.error {
+	color: red
+}
+</style>
+
+</h:head>
+
+<h:body>
+
+	<h:form>
+   		
+   		Counter Value: #{counterOne.value}
+		<h:commandButton value="Increment" action="#{counterOne.increment()}" />
+
+	</h:form>
+
+</h:body>
+
+</html>
